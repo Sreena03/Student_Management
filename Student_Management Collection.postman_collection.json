@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "831e3a6c-c347-4481-bede-e88c67270741",
+		"name": "Student_Management Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34615522",
+		"_collection_link": "https://grey-station-835383.postman.co/workspace/My-Workspace~9daa886b-35b4-4c2f-801b-683e48c93364/collection/34615522-831e3a6c-c347-4481-bede-e88c67270741?action=share&source=collection_link&creator=34615522"
+	},
+	"item": [
+		{
+			"name": "Admin Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\":\"admin12\",\r\n  \"password\":\"Admin123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signin/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signin",
+						""
+					]
+				},
+				"description": "Admin Login"
+			},
+			"response": [
+				{
+					"name": "Admin Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\":\"admin12\",\r\n  \"password\":\"Admin123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/signin/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"signin",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:20:25 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=yTSeeWAPC4UqLuOI9DC5zNNh1sWDjehT; expires=Wed, 30 Apr 2025 05:20:25 GMT; Max-Age=31449600; Path=/; SameSite=Lax",
+							"type": "text"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionid=bl2vpugi0b6fzqx1p2k150u04the9933; expires=Wed, 15 May 2024 05:20:25 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Admin logged successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Access Tokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\":\"admin12\",\r\n  \"password\":\"Admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login1",
+						""
+					]
+				},
+				"description": "Acecess the tokens"
+			},
+			"response": [
+				{
+					"name": "Access Tokens",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\":\"admin12\",\r\n  \"password\":\"Admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:21:52 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxNDk3MjkxMiwiaWF0IjoxNzE0NTQwOTEyLCJqdGkiOiJkZDU0ZTMyY2M4ZjI0MTg3YjY0ODRlZjdlZGZjMWIzMyIsInVzZXJfaWQiOjF9.73tXLp-7NGfNXJ-iZEh4_DQYFNctfYO8HX-2GRkVzOo\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTc2OTEyLCJpYXQiOjE3MTQ1NDA5MTIsImp0aSI6ImM5YTVhYjdiNmI1ZjQzN2ViYWM1YWRmYzM5YTM2ODViIiwidXNlcl9pZCI6MX0.t6NI7RzJJlNt_qXrx0u0gIkOHGGP_WLI8OsBsbs6TDc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Adding Departments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTc2OTEyLCJpYXQiOjE3MTQ1NDA5MTIsImp0aSI6ImM5YTVhYjdiNmI1ZjQzN2ViYWM1YWRmYzM5YTM2ODViIiwidXNlcl9pZCI6MX0.t6NI7RzJJlNt_qXrx0u0gIkOHGGP_WLI8OsBsbs6TDc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Btech EEE\",\r\n    \"description\":\"B.Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course covers various topics about the application of electronics, electromagnetism, and the the function of various electrical components to develop new and advanced electrical equipment, etc.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/depart/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"depart",
+						""
+					]
+				},
+				"description": "Adding Departments"
+			},
+			"response": [
+				{
+					"name": "Adding Departments",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Btech EEE\",\r\n    \"description\":\"B.Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course covers various topics about the application of electronics, electromagnetism, and the the function of various electrical components to develop new and advanced electrical equipment, etc.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/depart/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"depart",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:26:30 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "339",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Btech EEE\",\n    \"description\": \"B.Tech EEE is a 4-year undergraduate degree programme in electrical and electronics Engineering. This course covers various topics about the application of electronics, electromagnetism, and the the function of various electrical components to develop new and advanced electrical equipment, etc.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Editing Students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTc2OTEyLCJpYXQiOjE3MTQ1NDA5MTIsImp0aSI6ImM5YTVhYjdiNmI1ZjQzN2ViYWM1YWRmYzM5YTM2ODViIiwidXNlcl9pZCI6MX0.t6NI7RzJJlNt_qXrx0u0gIkOHGGP_WLI8OsBsbs6TDc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"registration_number\":\"A125\",\r\n    \"name\":\"Serene\",\r\n    \"email\":\"Serene@gmail.com\",\r\n    \"phoneNo\":\"9874102666\",\r\n    \"department\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/students/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"students",
+						"3",
+						""
+					]
+				},
+				"description": "Editing Students"
+			},
+			"response": [
+				{
+					"name": "Editing Students",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"registration_number\":\"A125\",\r\n    \"name\":\"Serene\",\r\n    \"email\":\"Serene@gmail.com\",\r\n    \"phoneNo\":\"9874102666\",\r\n    \"department\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/students/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"students",
+								"3",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:38:58 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"registration_number\": \"A125\",\n    \"name\": \"Serene\",\n    \"email\": \"Serene@gmail.com\",\n    \"phoneNo\": \"9874102666\",\n    \"department\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "Adding Students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTc2OTEyLCJpYXQiOjE3MTQ1NDA5MTIsImp0aSI6ImM5YTVhYjdiNmI1ZjQzN2ViYWM1YWRmYzM5YTM2ODViIiwidXNlcl9pZCI6MX0.t6NI7RzJJlNt_qXrx0u0gIkOHGGP_WLI8OsBsbs6TDc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"registration_number\": \"A126\",\r\n    \"name\": \"Fathima\",\r\n    \"email\": \"fathima@gmail.com\",\r\n    \"phoneNo\": \"8520147963\",\r\n    \"department\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						""
+					]
+				},
+				"description": "Adding Students"
+			},
+			"response": [
+				{
+					"name": "Adding Students",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registration_number\": \"A126\",\r\n    \"name\": \"Fathima\",\r\n    \"email\": \"fathima@gmail.com\",\r\n    \"phoneNo\": \"8520147963\",\r\n    \"department\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/student/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:41:41 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"registration_number\": \"A126\",\n    \"name\": \"Fathima\",\n    \"email\": \"fathima@gmail.com\",\n    \"phoneNo\": \"8520147963\",\n    \"department\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "Get Students",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/stud_list/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"stud_list",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:46:10 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "473",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"registration_number\": \"A123\",\n        \"name\": \"Vipul\",\n        \"email\": \"vipul@gmail.com\",\n        \"phoneNo\": \"7896541023\",\n        \"department\": 1\n    },\n    {\n        \"id\": 2,\n        \"registration_number\": \"A124\",\n        \"name\": \"Paul\",\n        \"email\": \"Paul@gmail.com\",\n        \"phoneNo\": \"7896541230\",\n        \"department\": 2\n    },\n    {\n        \"id\": 3,\n        \"registration_number\": \"A125\",\n        \"name\": \"Serene\",\n        \"email\": \"Serene@gmail.com\",\n        \"phoneNo\": \"9874102666\",\n        \"department\": 3\n    },\n    {\n        \"id\": 4,\n        \"registration_number\": \"A126\",\n        \"name\": \"Fathima\",\n        \"email\": \"fathima@gmail.com\",\n        \"phoneNo\": \"8520147963\",\n        \"department\": 3\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Delete Students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTc2OTEyLCJpYXQiOjE3MTQ1NDA5MTIsImp0aSI6ImM5YTVhYjdiNmI1ZjQzN2ViYWM1YWRmYzM5YTM2ODViIiwidXNlcl9pZCI6MX0.t6NI7RzJJlNt_qXrx0u0gIkOHGGP_WLI8OsBsbs6TDc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/students/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"students",
+						"3",
+						""
+					]
+				},
+				"description": "Delete Student"
+			},
+			"response": [
+				{
+					"name": "Delete Students",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/students/3/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"students",
+								"3",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 01 May 2024 05:49:22 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.0",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept",
+							"type": "text"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS",
+							"type": "text"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"type": "text"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin",
+							"type": "text"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
